@@ -20,10 +20,6 @@ and stop the monitor at specific times or create a symlink in `rc.d`:
 
     $ ln -s /root/auto-poweroff.sh /usr/syno/etc/rc.d/S99auto-poweroff.sh
 
-## Options
-
-- `--minutes`, `-m` Overrides the number of minutes
-
 ## Configure
 
 Options are defined at the top of the script as shell variables:
@@ -38,6 +34,10 @@ Config:
 - `TOLERATE` Number of packages to tolerate per minute. Defaults to `100`.
 - `DEBUG` Set to `1` to see RX/TX diffs every minute in the log file. Note that
   this will prevent disk spin-down. Defaults to `0`.
+
+## Options
+
+- `--minutes`, `-m` Overrides the number of minutes
 
 ## Crontab
 
